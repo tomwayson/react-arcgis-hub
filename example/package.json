@@ -7,9 +7,10 @@
   "dependencies": {
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
+    "react-arcgis-hub": "link:..",
     "react-dom": "^16.4.1",
-    "react-scripts": "^1.1.4",
-    "react-arcgis-hub": "link:.."
+    "react-intl": "^2.7.0",
+    "react-scripts": "^1.1.4"
   },
   "scripts": {
     "start": "react-scripts start",

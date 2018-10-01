@@ -1,13 +1,17 @@
 import React, { Component } from 'react'
+import { injectIntl } from "react-intl";
 
 import ExampleComponent from 'react-arcgis-hub'
 
-export default class App extends Component {
+class App extends Component {
   render () {
+    const {intl, intl:{formatMessage}} = this.props;
     return (
       <div>
-        <ExampleComponent text='Modern React component module' />
+        <ExampleComponent intl={intl} text={formatMessage({ id: 'app.modernReactComponentModule' })} />
       </div>
     )
   }
 }
+
+export default injectIntl(App)
