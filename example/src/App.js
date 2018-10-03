@@ -8,7 +8,11 @@ class App extends Component {
     const {intl, intl:{formatMessage}} = this.props;
     return (
       <div>
-        <ExampleComponent intl={intl} text={formatMessage({ id: 'app.modernReactComponentModule' })} />
+        <ExampleComponent
+          intl={intl}
+          text={formatMessage({ id: 'app.thisTextWasPassedIn' })}
+          date={Date.now()}
+          number={1000} />
       </div>
     )
   }

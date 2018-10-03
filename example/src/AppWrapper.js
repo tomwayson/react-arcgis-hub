@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { IntlProvider, addLocaleData } from "react-intl";
-// import arLocaleData from "react-intl/locale-data/ar";
+import { IntlProvider/* , addLocaleData */ } from "react-intl";
 // import esLocaleData from "react-intl/locale-data/es";
 import App from "./App";
+
 // bundle default messages from the app and from react-arcgis-hub
 // NOTE: that in CRA we have to use require to avoid ejecting
 const defaultMessages = require('./messages/en.json');

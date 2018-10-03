@@ -16,7 +16,7 @@
     "test": "cross-env CI=1 react-scripts-ts test --env=jsdom",
     "test:watch": "react-scripts-ts test --env=jsdom",
     "build": "yarn run copy:messages && rollup -c",
-    "copy:messages": "cp -r src/messages  dist/messages/",
+    "copy:messages": "cp -r src/messages  dist/",
     "start": "yarn run copy:messages && rollup -c -w",
     "prepare": "yarn run build",
     "predeploy": "cd example && yarn install && yarn run build",
