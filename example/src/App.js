@@ -13,7 +13,7 @@ class App extends Component {
     return (
       <div>
         <h3>{formatMessage({ id: 'app.authButtons'})}</h3>
-        <HubAuthButtons onSignIn={this.onSignIn} />
+        <HubAuthButtons intl={intl} onSignIn={this.onSignIn} />
         <h3>{formatMessage({ id: 'app.i18nExample'})}</h3>
         <ExampleComponent
           intl={intl}
