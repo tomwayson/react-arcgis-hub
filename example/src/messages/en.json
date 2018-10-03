@@ -1,3 +1,5 @@
 {
-  "app.thisTextWasPassedIn": "This text was passed in"
+  "app.i18nExample": "i18n Example",
+  "app.thisTextWasPassedIn": "This text was passed in",
+  "app.authButtons": "Auth buttons"
 }
