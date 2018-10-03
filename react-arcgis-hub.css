@@ -1,0 +1,66 @@
+.btn.btn-social {
+  position: relative;
+  padding-left: 44px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.btn.btn-social > :first-child {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 32px;
+  border-right: 1px solid #fff;
+  background-color: transparent;
+}
+.btn.btn-social.btn-facebook {
+  color: #fff;
+  background-color: #3b5998;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+.btn.btn-social.btn-facebook:focus, .btn.btn-social.btn-facebook.focus, .btn.btn-social.btn-facebook:hover, .btn.btn-social.btn-facebook:active, .btn.btn-social.btn-facebook.active {
+  color: #fff;
+  background-color: #2d4373;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+.btn.btn-social.btn-facebook:active:hover, .btn.btn-social.btn-facebook.active:hover, .btn.btn-social.btn-facebook:active:focus, .btn.btn-social.btn-facebook.active:focus, .btn.btn-social.btn-facebook:active.focus, .btn.btn-social.btn-facebook.active.focus {
+  color: #fff;
+  background-color: #23345a;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+.btn.btn-social.btn-google {
+  color: #fff;
+  background-color: #4285f4;
+  border-color: #4285f4;
+}
+.btn.btn-social.btn-google img {
+  background-color: #fff;
+  padding: 7px;
+}
+.btn.btn-social.btn-google:focus, .btn.btn-social.btn-google.focus, .btn.btn-social.btn-google:hover, .btn.btn-social.btn-google:active, .btn.btn-social.btn-google.active {
+  box-shadow: 0 0 3px 3px rgba(66, 133, 244, 0.3);
+}
+.btn.btn-social.btn-google:active:hover, .btn.btn-social.btn-google.active:hover, .btn.btn-social.btn-google:active:focus, .btn.btn-social.btn-google.active:focus, .btn.btn-social.btn-google:active.focus, .btn.btn-social.btn-google.active.focus {
+  box-shadow: 0 0 3px 3px rgba(66, 133, 244, 0.3);
+}
+.btn.btn-social.btn-ago {
+  color: #fff;
+  background-color: #007bff;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+.btn.btn-social.btn-ago > :first-child {
+  border-right: none !important;
+  padding: 2px;
+}
+.btn.btn-social.btn-ago:focus, .btn.btn-social.btn-ago.focus, .btn.btn-social.btn-ago:hover, .btn.btn-social.btn-ago:active, .btn.btn-social.btn-ago.active {
+  color: #fff !important;
+  background-color: #006fe6;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+.btn.btn-social.btn-ago:active:hover, .btn.btn-social.btn-ago.active:hover, .btn.btn-social.btn-ago:active:focus, .btn.btn-social.btn-ago.active:focus, .btn.btn-social.btn-ago:active.focus, .btn.btn-social.btn-ago.active.focus {
+  color: #fff !important;
+  background-color: #006fe6;
+  border-color: rgba(0, 0, 0, 0.2);
+}

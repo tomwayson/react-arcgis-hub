@@ -1,0 +1,9 @@
+// define bootstrap defaults needed by react-arcgis-hub components
+// for now, just copying from https://github.com/twbs/bootstrap/blob/master/scss/_variables.scss
+// TODO: how should we handle these? do we take dep on bootstrap sass?
+$white: #fff !default;
+$blue: #007bff !default;
+$primary: $blue !default;
+
+// components
+@import './HubAuthButtons.scss'

@@ -1,0 +1,100 @@
+.btn.btn-social {
+  position: relative;
+  padding-left: 44px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  > :first-child {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 32px;
+    // line-height: 34px;
+    // font-size: 1.6em;
+    // text-align: center;
+    border-right: 1px solid $white;
+    background-color: transparent;
+  }
+
+  &.btn-facebook {
+    color: #fff;
+    background-color: #3b5998;
+    border-color: rgba(0,0,0,0.2)
+  }
+  &.btn-facebook:focus,
+  &.btn-facebook.focus,
+  &.btn-facebook:hover,
+  &.btn-facebook:active,
+  &.btn-facebook.active {
+    color: $white;
+    background-color: #2d4373;
+    border-color: rgba(0,0,0,0.2);
+  }
+  &.btn-facebook:active:hover,
+  &.btn-facebook.active:hover,
+  &.btn-facebook:active:focus,
+  &.btn-facebook.active:focus,
+  &.btn-facebook:active.focus,
+  &.btn-facebook.active.focus {
+    color: $white;
+    background-color: #23345a;
+    border-color: rgba(0,0,0,0.2);
+  }
+
+  &.btn-google {
+    color: $white;
+    background-color: #4285f4;
+    border-color: #4285f4;
+    img {
+      background-color: $white;
+      padding: 7px;
+    }
+  }
+  &.btn-google:focus,
+  &.btn-google.focus,
+  &.btn-google:hover,
+  &.btn-google:active,
+  &.btn-google.active {
+    box-shadow: 0 0 3px 3px rgba(66,133,244,.3);
+  }
+  &.btn-google:active:hover,
+  &.btn-google.active:hover,
+  &.btn-google:active:focus,
+  &.btn-google.active:focus,
+  &.btn-google:active.focus,
+  &.btn-google.active.focus {
+    box-shadow: 0 0 3px 3px rgba(66,133,244,.3);
+  }
+  // This had been one level up, but latest node-sass no-likey
+  // from what I can tell this is where it should be anyhow
+  &.btn-ago {
+    color: $white;
+    background-color: $primary;
+    border-color: rgba(0,0,0,0.2);
+    > :first-child {
+      border-right: none !important;
+      padding: 2px
+    }
+  }
+  &.btn-ago:focus,
+  &.btn-ago.focus,
+  &.btn-ago:hover,
+  &.btn-ago:active,
+  &.btn-ago.active {
+    color: #fff !important;
+    background-color: darken($primary, 5%);
+    border-color: rgba(0,0,0,0.2);
+  }
+  &.btn-ago:active:hover,
+  &.btn-ago.active:hover,
+  &.btn-ago:active:focus,
+  &.btn-ago.active:focus,
+  &.btn-ago:active.focus,
+  &.btn-ago.active.focus {
+    color: #fff !important;
+    background-color: darken($primary, 5%);
+    border-color: rgba(0,0,0,0.2);
+  }
+}

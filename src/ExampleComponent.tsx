@@ -6,8 +6,6 @@ import * as React from 'react'
 
 import { t, formatTime } from './utils';
 
-import styles from './styles.css'
-
 export type Props = {
   // TODO: :intlShape
   intl: any
@@ -26,7 +24,7 @@ export default class ExampleComponent extends React.Component<Props> {
     } = this.props
 
     return (
-      <div className={styles.test}>
+      <div>
         <h3>{t(intl, 'arcgisHub.ExampleComponent.i18nExamples')}</h3>
         {!!text && <p>{t(intl, 'arcgisHub.ExampleComponent.textProp')}: {text}</p>}
         {!!date
