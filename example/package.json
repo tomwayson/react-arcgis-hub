@@ -5,12 +5,14 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "bootstrap": "^4.1.3",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-arcgis-hub": "link:..",
     "react-dom": "^16.4.1",
     "react-intl": "^2.7.0",
-    "react-scripts": "^1.1.4"
+    "react-scripts": "^1.1.4",
+    "reactstrap": "^6.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
