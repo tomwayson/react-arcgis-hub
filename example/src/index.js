@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom'
 // TODO: distribute the react-arcgis-hub .scss files and 
 // show how to compile/use those in a client app (i.e. via webpack)
 import 'bootstrap/dist/css/bootstrap.min.css'
-import 'react-arcgis-hub/dist/react-arcgis-hub.css'
+import 'react-arcgis-hub/dist/css/react-arcgis-hub.css'
 import './index.css'
 
 import AppWrapper from './AppWrapper'
