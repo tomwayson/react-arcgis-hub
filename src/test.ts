@@ -1,7 +1,7 @@
-import ExampleComponent from './ExampleComponent'
+import HubAuthButtons from './HubAuthButtons'
 
-describe('ExampleComponent', () => {
+describe('HubAuthButtons', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(HubAuthButtons).toBeTruthy()
   })
 })

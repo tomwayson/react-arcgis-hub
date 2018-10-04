@@ -2,8 +2,7 @@
 
 A library of [ArcGIS Hub](http://hub.arcgis.com/) components for [React]  applications.
 
-<!-- TODO: add sheilds after publishing -->
-<!-- [![NPM](https://img.shields.io/npm/v/react-arcgis-hub.svg)](https://www.npmjs.com/package/react-arcgis-hub) -->
+[![NPM](https://img.shields.io/npm/v/react-arcgis-hub.svg)](https://www.npmjs.com/package/react-arcgis-hub)
 
 > **NOTE:** This library should be considered experimental for the time being
 
@@ -11,10 +10,14 @@ Pairs nicely with [@esri/hub.js](https://esri.github.io/hub.js/), and [@esri/arc
 
 ## Install
 
-NOTE: this library has not yet been published to NPM, but you can still install it from GitHub:
+```bash
+npm install --save react-arcgis-hub
+```
+
+or
 
 ```bash
-npm install --save tomwayson/react-arcgis-hub
+yarn add react-arcgis-hub
 ```
 
 ## Usage
@@ -65,6 +68,12 @@ The components in this library are also internationalized and are designed to wo
 The default translations for this libary are distributed with the built code.
 
 See how the [Example app loads the translations from this library and configures react-intl](./example/src/AppWrapper.js).
+
+## Development
+
+This library was created with [create-react-library](https://www.npmjs.com/package/create-react-library).
+
+Follow these [development instructions](https://github.com/transitive-bullshit/create-react-library#development) to build and run the library and example app locally.
 
 ## License
 
