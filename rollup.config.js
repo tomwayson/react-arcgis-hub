@@ -26,7 +26,7 @@ export default {
   plugins: [
     external(),
     sass({
-      output: true,
+      output: 'dist/react-arcgis-hub.css'
     }),
     url(),
     resolve(),
