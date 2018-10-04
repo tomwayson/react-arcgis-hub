@@ -5,8 +5,8 @@ import App from "./App";
 
 // bundle default messages from the app and from react-arcgis-hub
 // NOTE: that in CRA we have to use require to avoid ejecting
-const defaultMessages = require('./messages/en.json');
-const arcgisHubMessages = require('react-arcgis-hub/dist/messages/en.json');
+const defaultMessages = require('./translations/en.json');
+const arcgisHubMessages = require('react-arcgis-hub/dist/translations/en.json');
 
 const defaultLocale = 'en';
 // TODO: get current locale from browser or use default
