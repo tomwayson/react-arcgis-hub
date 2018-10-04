@@ -15,11 +15,12 @@
   "scripts": {
     "test": "cross-env CI=1 react-scripts-ts test --env=jsdom",
     "test:watch": "react-scripts-ts test --env=jsdom",
-    "build": "yarn run copy && rollup -c",
+    "build": "yarn run clean && yarn run copy && rollup -c",
+    "clean": "rm -rf dist && mkdir dist",
     "copy": "yarn run copy:sass && yarn run copy:messages",
     "copy:messages": "cp -r src/messages  dist/",
     "copy:sass": "cp src/*.scss  dist/",
-    "start": "yarn run copy:messages && rollup -c -w",
+    "start": "yarn run clean && yarn run copy && rollup -c -w",
     "prepare": "yarn run build",
     "predeploy": "cd example && yarn install && yarn run build",
     "deploy": "gh-pages -d example/build"
