@@ -27,7 +27,7 @@
     "prestart": "yarn run clean",
     "start": "yarn run build:sass && yarn run copy:translations && yarn run watch:ts & yarn run watch:sass",
     "prepare": "yarn run build",
-    "predeploy": "cd example && yarn install && yarn run build",
+    "predeploy": "yarn run build && cd example && yarn install && yarn run build",
     "deploy": "gh-pages -d example/build",
     "watch:sass": "node-sass -w src/index.scss dist/css/react-arcgis-hub.css",
     "watch:ts": "tsc -w --declaration"
