@@ -1,5 +1,9 @@
 {
   "arcgisHub.HubAuthButtons.withFacebook": "Sign in with Facebook",
   "arcgisHub.HubAuthButtons.withGoogle": "Sign in with Google",
-  "arcgisHub.HubAuthButtons.withOrganization": "Sign in with Organization"
+  "arcgisHub.HubAuthButtons.withOrganization": "Sign in with Organization",
+  "arcgisHub.ItemPager.firstPage": "First page",
+  "arcgisHub.ItemPager.previousPage": "Previous page",
+  "arcgisHub.ItemPager.nextPage": "Next page",
+  "arcgisHub.ItemPager.lastPage": "Last page"
 }

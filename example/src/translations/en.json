@@ -1,3 +1,5 @@
 {
-  "app.authButtons": "Auth buttons"
+  "app.signInMessage": "TODO: sign in w/ {provider}.",
+  "app.authButtons": "Auth buttons",
+  "app.itemPager": "Item Pager"
 }
