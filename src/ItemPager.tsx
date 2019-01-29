@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { t } from './utils';
+import { t } from './utils/intl';
 
 /*
   Pagination controls that work with the ArcGIS Online style of pagination
