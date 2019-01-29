@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { t } from './utils'
+import { t } from './utils/intl'
 
 export type HubAuthButtonsProps = {
   onSignIn?: (provider?: string) => void;
