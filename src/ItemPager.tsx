@@ -10,14 +10,14 @@ import { t } from './utils';
     - changePage: a function that will get called with the page number to change to
 */
 interface ItemPagerProps {
-  // TODO: :intlShape
-  intl: any;
   pageSize: number;
   totalCount: number;
   pageNumber: number;
-  changePage: (pageNumber: number) => void;
+  changePage?: (pageNumber: number) => void;
+  // TODO: :intlShape
+  intl?: any;
 }
-const ItemPager: React.SFC<ItemPagerProps> = ({ intl, pageSize, totalCount, pageNumber, changePage }) => {
+const ItemPager: React.SFC<ItemPagerProps> = ({ pageSize, totalCount, pageNumber, changePage, intl }) => {
   const totalPages = Math.ceil(totalCount / pageSize);
   if (!totalPages || totalPages < 2) {
     // don't show pagination
@@ -54,7 +54,7 @@ const ItemPager: React.SFC<ItemPagerProps> = ({ intl, pageSize, totalCount, page
         currentPage={currentPage}
         changePage={changePage}
         key="&laquo;"
-        label={t(intl, 'arcgisHub.ItemPager.firstPage')}
+        label={t('arcgisHub.ItemPager.firstPage', intl)}
         disabled={isFirstPage}
       >
         &laquo;
@@ -64,7 +64,7 @@ const ItemPager: React.SFC<ItemPagerProps> = ({ intl, pageSize, totalCount, page
         currentPage={currentPage}
         changePage={changePage}
         key="&lsaquo;"
-        label={t(intl, 'arcgisHub.ItemPager.previousPage')}
+        label={t('arcgisHub.ItemPager.previousPage', intl)}
         disabled={isFirstPage}
       >
         &lsaquo;
@@ -77,7 +77,7 @@ const ItemPager: React.SFC<ItemPagerProps> = ({ intl, pageSize, totalCount, page
         currentPage={currentPage}
         changePage={changePage}
         key="&rsaquo;"
-        label={t(intl, 'arcgisHub.ItemPager.nextPage')}
+        label={t('arcgisHub.ItemPager.nextPage', intl)}
         disabled={isLastPage}
       >
         &rsaquo;
@@ -87,7 +87,7 @@ const ItemPager: React.SFC<ItemPagerProps> = ({ intl, pageSize, totalCount, page
         currentPage={currentPage}
         changePage={changePage}
         key="&raquo;"
-        label={t(intl, 'arcgisHub.ItemPager.lastPage')}
+        label={t('arcgisHub.ItemPager.lastPage', intl)}
         disabled={isLastPage}
       >
         &raquo;
@@ -101,7 +101,7 @@ interface PageItemProps {
   currentPage: number;
   disabled?: boolean;
   label?: string;
-  changePage: (pageNumber: number) => void;
+  changePage?: (pageNumber: number) => void;
 }
 class PageItem extends React.Component<PageItemProps> {
   onClick = (e: any) => {
