@@ -4,7 +4,7 @@ A library of [ArcGIS Hub](http://hub.arcgis.com/) components for [React] applica
 
 [![NPM](https://img.shields.io/npm/v/react-arcgis-hub.svg)](https://www.npmjs.com/package/react-arcgis-hub)
 
-> **NOTE:** This library should be considered experimental for the time being
+> **NOTE:** This library was an experiment that never ended up being adopted.
 
 Pairs nicely with [@esri/hub.js](https://esri.github.io/hub.js/), and [@esri/arcgis-rest-js](https://esri.github.io/arcgis-rest-js/).
 
